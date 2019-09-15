@@ -5,7 +5,7 @@
 
 
 class Dict(dict):
-    '''
+    """
     Simple dict but also support access as x.y style.
 
     >>> d1 = Dict()
@@ -26,7 +26,7 @@ class Dict(dict):
     Traceback (most recent call last):
         ...
     AttributeError: 'Dict' object has no attribute 'empty'
-    '''
+    """
 
     def __init__(self, **kw):
         super().__init__(**kw)
